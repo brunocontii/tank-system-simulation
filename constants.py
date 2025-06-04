@@ -15,3 +15,9 @@ H_C = 20
 
 # initial condition
 H_0 = 10
+
+# integration step
+STEP = 0.05
+
+# simulation time
+SIM_TIME = 100
