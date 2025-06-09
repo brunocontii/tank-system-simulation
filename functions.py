@@ -61,18 +61,3 @@ def f_output(t, q):
 # calcula el caudal de entrada al tanque segun el tiempo
 def f_input(t):
     return 15 + 5 * math.cos(0.1 * t)
-
-print(f"Euler t=0.05: {euler(0.05)}")
-print(f"Adams-Bashforth 3 t=0.05: {adams_bashforth_3(0.05)}")
-print(f"\n")
-print(f"Euler t=0.10: {euler(0.10)}")
-print(f"Adams-Bashforth 3 t=0.10: {adams_bashforth_3(0.10)}")
-print(f"\n")
-print(f"Euler t=0.15: {euler(0.15)}")
-print(f"Adams-Bashforth 3 t=0.15: {adams_bashforth_3(0.15)}")
-print(f"\n")
-print(f"Euler t=0.20: {euler(0.20)}")
-print(f"Adams-Bashforth 3 t=0.20: {adams_bashforth_3(0.20)}")
-print(f"\n")
-print(f"Euler t=4: {euler(4)}")
-print(f"Adams-Bashforth 3 t=4: {adams_bashforth_3(4)}\n")
