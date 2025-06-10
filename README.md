@@ -1,6 +1,6 @@
 # Tank System Simulation
 
-Se busca estudiar el comportamiento dinámico de un tanque cilíndrico de base horizontal, el cual recibe un flujo de entrada periódico y posee una válvula de salida cuyo caudal se ajusta automáticamente en función de la altura del líquido en el interior. El propósito es modelar matemáticamente la evolución de la altura dentro del tanque y, a partir de ello, analizar cómo actúa la válvula adicional cuando la altura supera un umbral crítico​.
+Se busca estudiar el comportamiento dinámico de un tanque cilíndrico de base horizontal, el cual recibe un flujo de entrada periódico y posee una válvula de salida cuyo caudal se ajusta automáticamente en función de la altura del líquido en el interior. El propósito es modelar matemáticamente la evolución de la altura dentro del tanque y, a raiz de ello, analizar cómo actúa la válvula adicional cuando la altura supera un umbral crítico​.
 
 ## Prerrequisitos
 
@@ -67,7 +67,7 @@ Se busca estudiar el comportamiento dinámico de un tanque cilíndrico de base h
    Una vez generadas, puede abrir las gráficas con su visor de imágenes preferido. Por ejemplo, en macOS/Linux:
 
    ```bash
-   open input_vs_output_vs_height.png
+   open input_vs_output_vs_height.pdf
    ```
    O de manera manual.
 
@@ -76,4 +76,6 @@ Se busca estudiar el comportamiento dinámico de un tanque cilíndrico de base h
 * Cada script Gnuplot (`.gp`) está preparado para leer automáticamente los archivos de datos generados por `main.py`.
 * Algunas gráficas muestran una sola función (por ejemplo, solo el caudal de salida), mientras que otras son comparativas.
 * Si desea agregar nuevas visualizaciones, basta con crear un nuevo archivo `.gp` en `graphics/` y seguir el mismo patrón.
+* Si desea modificar la simulación solo es necesario cambiar los valores en el archivo `constants.py`.
+
 
