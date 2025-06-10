@@ -2,7 +2,7 @@ from constants import SIM_TIME, STEP, H_0
 from functions import euler, adams_bashforth_3, f_output, f_input, derivative
 import os
 
-output_dir = "graphics"
+output_dir = "graphics" # creamos un directorio para guardar los resultados
 os.makedirs(output_dir, exist_ok=True)
 
 steps = int(SIM_TIME / STEP) + 1
@@ -17,7 +17,7 @@ with open(os.path.join(output_dir, "height_euler_results.txt"), "w") as euler_fi
         euler_result = euler(t)
         adams_result = adams_bashforth_3(t)
         f_output_result = f_output(t, q)
-        q += STEP * derivative(t, q) # calculando el proximo valor de q para el siguiente output
+        q += STEP * derivative(t, q) # calculando el proximo valor de q para el siguiente f_output
         f_input_result = f_input(t)
         euler_file.write(f"{t:.2f} {euler_result:.5f}\n")
         adams_file.write(f"{t:.2f} {adams_result:.5f}\n")
