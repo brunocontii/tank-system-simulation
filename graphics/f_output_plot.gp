@@ -1,11 +1,12 @@
-set terminal pngcairo size 800,600 font "Arial,14"
-set output 'f_output_plot.png'
+set terminal pdfcairo size 10in,7.5in font "Arial,12"
+set output 'f_output_plot.pdf'
 
 set title "Funcion de Salida"
 set xlabel "Tiempo (t)"
 set ylabel "Valor de Salida"
 set grid
 set xrange [0:100]
-set xtics 5
+set xtics 2
+set ytics 1
 
-plot "f_output.txt" using 1:2 with dots title "Output"
+plot "f_output.txt" using 1:2 with points pt 7 ps 0.1 title "Output"
